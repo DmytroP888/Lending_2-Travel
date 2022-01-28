@@ -1,0 +1,490 @@
+/* ===================== General styles start ======================== */
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+
+/* --------- Var text ---------- */
+
+:root {
+    --color_text_poppins: #5E6282;
+    --color_text_volkhov: #181E4B;
+    --fn_sz_footer_text_poppins: 18;
+}
+
+
+/* --------- Var text ---------- */
+
+header {
+    background-image: url(../img/Decore.png);
+    color: floralwhite;
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+.text-googlesans {
+    font-family: Google Sans;
+    font-style: normal;
+}
+
+.text_poppins {
+    font-family: Poppins;
+    font-style: normal;
+    color: var(--color_text_poppins);
+}
+
+.text_volkhov {
+    font-family: Volkhov;
+    font-style: normal;
+    color: var(--color_text_volkhov);
+}
+
+/* ===================== General styles end ======================== */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+/* ========================= Logo + Menu start ====================== */
+
+.header__nav {
+    display: flex;
+    justify-content: space;
+    margin: 0 auto;
+    width: 85%;
+}
+
+.header__logo {
+    width: 115px;
+    height: 34px;
+    margin: 50px 190px 0px 0px;
+}
+
+.header__nav__menu {
+    margin-top: 60px;
+}
+
+/* ----------menu start---------- */
+
+.header__nav__menu ul li {
+    display: inline;
+    margin-left: 40px;
+    margin-right: 0px;
+    font-weight: normal;
+    font-size: 17px;
+}
+
+.header__nav__menu ul li a {
+    color: #212832;
+    padding: 2px 5px;
+}
+
+.header__nav__menu li a:hover {
+    border: 1px solid black;
+    border-radius: 5px;
+    margin: 0px 0px 0px -2px;
+    color: green;
+}
+
+.header__nav__menu__en img {
+    padding-bottom: 3px;
+    padding-left: 3px;
+}
+/* ---------menu end----------- */
+
+
+/* ---------menu EN select start----------- */
+
+.header__nav__menu__en {
+    position: relative;
+    display: inline-block;
+}
+
+.header__nav__menu__en__select {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    background-color: #eaf0f1;
+    min-width: 50px;
+    box-shadow: 0 8px 26px rgba(0, 0, 0, 0.4), 0 28px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.header__nav__menu__en__select li a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.header__nav__menu__en__select li a:hover {
+    background-color: #75e0e4;
+    border: none;
+    color: black;
+}
+
+.header__nav__menu__en:hover .header__nav__menu__en__select {
+    display: block;
+}
+/* ---------menu EN select end----------- */
+
+/* ========================= Logo + Menu end ====================== */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+/* ========================= HeadBlock start ====================== */
+
+.headblock {
+    margin: 0 auto;
+    margin-top: 20px;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* ----------------------- */
+
+.headblock__content {
+    margin-top: 130px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+}
+
+.headblock__content__best {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: #DF6951;
+    margin-top: 0px;
+}
+
+.headblock__content__dekorsmall {
+    margin-top: 93px;
+    margin-left: 230px;
+    z-index: 1;
+}
+
+.headblock__content h1 {
+    margin-top: -85px;
+    font-weight: bold;
+    font-size: 84px;
+    line-height: 89px;
+    letter-spacing: -0.04em;
+    max-width: 600px;
+    min-width: 400px;
+    z-index: 2;
+}
+
+.headblock__content__built {
+    margin-top: 30px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    max-width: 477px;
+    min-width: 450px;
+}
+
+.headblock__content__play {
+    margin-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.headblock__content__play__btn {
+    width: 170px;
+    height: 60px;
+    background: #F1A501;
+    box-shadow: 0px 20px 35px rgba(241, 165, 1, 0.15);
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 1rem 1.5rem;
+    text-decoration: none;
+}
+
+.headblock__content__play__btn:hover {
+    border: 3px double;
+    color: #825615;
+}
+
+.headblock__content__play img {
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 0px;
+    margin-top: -10px;
+}
+
+.headblock__content__play p {
+    margin-top: 20px;
+}
+
+.headblock__content__play p a {
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 25px;
+    color: #686D77;
+}
+
+/* ----------------------- */
+
+.headblock>img {
+    margin-left: -20%;
+}
+
+/* ========================= HeadBlock end ====================== */
+/* |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| */
+
+
+/* #########{{{{{{{{{{{ MEDIA screen setting start }}}}}}}}}}######## */
+
+/* ========================= header media start ====================== */
+/* -- Уменьшить главное меню (header__nav__menu) <  1280px start -- */
+@MEDIA (max-width: 1280px) {
+    .header__nav__menu ul li {
+        display: inline;
+        margin-left: 15px;
+        margin-right: 0px;
+        font-weight: normal;
+        font-size: 16x;
+    }
+    .headblock>img {
+        margin-left: -20%;
+        width: 60%;
+        height: 60%;
+    }
+    .checkbox {
+        display: none;
+    }
+    .button {
+        position: relative;
+        background-color: hsla(50, 33%, 25%, .75);
+        height: 3.5rem;
+        width: 3.5rem;
+        border-radius: 15%;
+        border: 3px double gold;
+        position: fixed;
+        top: 5vh;
+        right: 5vw;
+        z-index: 2000;
+        box-shadow: 0 1rem 3rem black;
+        text-align: center;
+        cursor: pointer;
+    }
+    .background {
+        margin-top: 230px;
+        margin-right: -100px;
+        height: 0.34rem;
+        width: 0.42rem;
+        border-radius: 3%;
+        position: fixed;
+        right: 7.1vw;
+        z-index: 1000;
+        background-color: hsla(3, 6%, 5%, .85);
+        transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
+    }
+    .nav {
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: -60vw;
+        z-index: 1500;
+        opacity: 0;
+        width: 0;
+        transition: all 0.8s;
+    }
+    .list {
+        position: absolute;
+        top: 280px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        list-style: none;
+        text-align: right;
+        width: 100%;
+    }
+    .item,
+    link {
+        margin: 0.1rem;
+        font-size: 20px;
+    }
+    .link:link,
+    .link:visited {
+        display: inline-block;
+        font-size: 1.rem;
+        padding: 0.7rem 2rem;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-size: 220%;
+        transition: all 0.4s;
+    }
+    .link:hover,
+    .link:active {
+        color: lightgreen;
+        cursor: pointer;
+    }
+    /* functionality */
+    .checkbox:checked~.background {
+        transform: scale(80);
+    }
+    .checkbox:checked~.nav {
+        opacity: 1;
+        width: 100%;
+        right: 0;
+    }
+    /* styling hamb ICON */
+    .icon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .icon,
+    .icon::before,
+    .icon::after {
+        width: 1.8rem;
+        height: 3px;
+        background-color: yellowgreen;
+        display: inline-block;
+    }
+    .icon::before,
+    .icon::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 0.2s;
+    }
+    .icon::before {
+        top: -0.8rem;
+    }
+    .icon::after {
+        top: 0.8rem;
+    }
+    .button:hover icon:before {
+        top: -1rem;
+    }
+    .button:hover icon::after {
+        top: 1rem;
+    }
+    .checkbox:checked+.button .icon {
+        background-color: transparent;
+    }
+    .checkbox:checked+.button .icon::before {
+        top: 0;
+        transform: rotate(235deg);
+    }
+    .checkbox:checked+.button .icon::after {
+        top: 0;
+        transform: rotate(-235deg);
+    }
+}
+/* -- Уменьшить главное меню (header__nav__menu) < 1280px end -- */
+
+/* -- Уменьшить margin-right для Logo < 1110px -- */
+@MEDIA (max-width: 1110px) {
+    .header__logo {
+        margin: 50px 100px 0px 0px;
+    }
+}
+
+/* -- Спрятать hamb__menu если > 971px -- */
+@MEDIA (min-width: 971px) {
+    .hamb__menu {
+        display: none;
+    }
+}
+
+/* -- Заменить главное меню (header__nav__menu) на (hamb__menu) <  970px start -- */
+
+@MEDIA (max-width: 970px) {
+    .header__nav__menu {
+        display: none;
+    }
+    .headblock__content__best {
+        min-width: 250px;
+        max-width: 300px;
+    }
+    .headblock__content__dekorsmall {
+        margin-top: 65px;
+        margin-left: 1px;
+    }
+    .headblock__content>h1 {
+        margin-top: -60px;
+        font-size: 50px;
+        line-height: 55px;
+        max-width: 350px;
+        min-width: 270px;
+    }
+    .headblock__content__built {
+        line-height: 25px;
+        max-width: 300px;
+        min-width: 220px;
+    }
+    .headblock__content__play {
+        flex-wrap: wrap;
+        max-width: 300px;
+        min-width: 320px;
+    }
+    .headblock__content__play p {
+        margin-top: -40px;
+        padding-left: 190px;
+    }
+}
+/* -- Заменить главное меню (header__nav__menu) на (hamb__menu) <  970px end -- */
+
+/* -- Уменьшить и подстроить контент header (headblock__content) < 650px start -- */
+@MEDIA (max-width: 650px) {
+    .headblock {
+        flex-direction: column-reverse;
+    }
+    .headblock__content__dekorsmall {
+        width: 95%;
+    }
+    .headblock__content>h1 {
+        font-size: 35px;
+        line-height: 55px;
+        width: 90%;
+        min-width: 170px;
+    }
+    .headblock>img {
+        margin-left: -10%;
+        width: 80%;
+        height: 80%;
+        margin-top: 10px;
+    }
+    .headblock__content {
+        margin-top: 10px;
+    }
+    .headblock__content__play {
+        flex-direction: column;
+        align-items: center;
+        min-width: 95%;
+    }
+    .headblock__content__play p {
+        padding-left: 1px;
+    }
+}
+/* -- Уменьшить и подстроить контент header (headblock__content) < 650px end -- */
+/* ========================= HEADER start ====================== */
+
+
+
+
+/* #########{{{{{{{{{{{ MEDIA screen setting end }}}}}}}}}}######## */
